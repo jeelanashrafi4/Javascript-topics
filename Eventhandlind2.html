@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event handling2</title>
+</head>
+<body>
+    <h1 id="d1">event<i>practice</i></h1>
+    <ol>
+        <li>satti</li>
+        <li>bantu</li>
+        <li>kittu</li>
+    </ol>
+    <h1 id="d2" onclick="abc(event)">Nikhil</h1>
+    <h1 id="d3" onclick="abc(event)">Prasanth</h1>
+    <h1 onclick="abc(event)">Lakshman</h1>
+    <script>
+        //var x =document.getElementById("d2");
+        //console.dir(x);
+        //Modifiying element:color, text, background, border.
+        //function abc(){
+            //var x =document.getElementById("d2");
+            //x.style.color="red"
+            //x.innerHTML="Nikhil bs"
+            //x.style.backgroundColor="green"
+            //x.style.border="10px solid black"
+        //}
+
+        //function pqr(){
+            //var x =document.getElementById("d3");
+            //x.style.color="red"
+            //x.innerHTML="Prasanth bs"
+            //x.style.backgroundColor="green"
+            //x.style.border="10px solid black"
+        //}
+    
+        function abc(event){
+            var x = event.target;
+            x.style.color="red"
+            x.style.backgroundColor="green"
+            x.style.border="10px solid black"
+        }
+    </script>
+</body>
+</html>

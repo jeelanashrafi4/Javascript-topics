@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event handling</title>
+</head>
+
+<body>
+    <!---onclick is event listener abc() is event handler-->
+    <!---combining both event listners and handlers is known as event handling-->
+    <h1 onclick="abc(event)">Jeelan</h1>
+    <a href="">This is one link</a>
+    <h1 onclick="abc(event)">sharukh</h1>
+    <script>
+        function abc(ev) {
+            console.log(ev.target);
+            alert("Hello World");
+        }
+        console.dir(document)
+          
+    </script>
+</body>
+
+</html>

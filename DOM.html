@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Nani</h1>
+    <h2>Jeelan</h2>
+    <h1 id="d2">Samantha<i>nagchaitanya</i></h1>
+    <h1>vani</h1>
+    <ul>
+        <li>
+            <h4 id="d4">canada</h4>
+        </li>
+    </ul>
+    <ol>
+        <li>satti</li>
+        <li>venky</li>
+        <li>dileep</li>
+    </ol>
+    <script>
+        //Accessing elements by children methods
+        console.dir(document);
+        console.log(document.children[0].children[1].children[1]);//Jeelan
+        console.log(document.children[0].children[0].children[2]);//title
+        //Accessing elements by id
+        console.log(document.getElementById("d2"));
+        console.log(document.getElementById("d4"));
+        //Accessing elements by Tagname, it gives html collection
+        var t = document.getElementsByTagName("li");
+        console.log(t);
+        var q = document.querySelectorAll("li");// it gives node list which have more methods
+        console.log(q);
+        //we can access the elements using the specific tags
+        var w=document.querySelectorAll("ol li");
+        console.log(w);
+        //foreach
+        q.forEach(function(ele){
+            console.log(ele.textContent);
+            console.log(ele.innerHTML);
+        })
+        //difference between innerhtml and innertext
+        var x = document.getElementById("d2");
+        console.log(x.innerHTML);
+        console.log(x.innerText);
+        //looping
+        var z = document.getElementsByTagName("li");
+        for (var i = 0; z.length - 1; i++) {
+            console.log(z[i].innerHTML);
+        }
+        var a = 100;
+        function abc() {
+            console.log("edupoly")
+        }
+        abc();
+    </script>
+</body>
+
+</html>
